@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2021)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Nzudom, Patrick, Bloc 2.aux
+The style file: plain.bst
+Database file #1: biblioMath.bib
+Warning--string name "[houde" is undefined
+--line 38 of file biblioMath.bib
+"," immediately follows a field name---line 38 of file biblioMath.bib
+ :  author=[houde, Louis]
+ :                       ,
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in Loiprob
+You've used 6 entries,
+            2118 wiz_defined-function locations,
+            524 strings with 4578 characters,
+and the built_in function-call counts, 1193 in all, are:
+= -- 100
+> -- 36
+< -- 0
++ -- 16
+- -- 10
+* -- 38
+:= -- 195
+add.period$ -- 16
+call.type$ -- 6
+change.case$ -- 20
+chr.to.int$ -- 0
+cite$ -- 7
+duplicate$ -- 52
+empty$ -- 134
+format.name$ -- 10
+if$ -- 258
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 4
+newline$ -- 31
+num.names$ -- 10
+pop$ -- 57
+preamble$ -- 1
+purify$ -- 17
+quote$ -- 0
+skip$ -- 42
+stack$ -- 0
+substring$ -- 30
+swap$ -- 6
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 20
+warning$ -- 1
+while$ -- 10
+width$ -- 7
+write$ -- 53
+(There was 1 error message)

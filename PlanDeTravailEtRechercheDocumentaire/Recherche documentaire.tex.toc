@@ -1,0 +1,9 @@
+\select@language {french}
+\contentsline {section}{\numberline {1}Bloc 1 - Eli}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Recherche documentaire - Bloc 1}{1}{subsection.1.1}
+\contentsline {section}{\numberline {2}Bloc 2 - Eli}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Recherche documentaire - Bloc 2}{2}{subsection.2.1}
+\contentsline {section}{\numberline {3}Bloc 1 - Patrick}{2}{section.3}
+\contentsline {subsection}{\numberline {3.1}Recherche documentaire - Bloc 1}{2}{subsection.3.1}
+\contentsline {section}{\numberline {4}Bloc 2 - Patrick}{3}{section.4}
+\contentsline {subsection}{\numberline {4.1}Recherche documentaire - Bloc 2}{3}{subsection.4.1}

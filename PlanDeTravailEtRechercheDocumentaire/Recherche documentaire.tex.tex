@@ -1,0 +1,126 @@
+% !TEX encoding = UTF-8 Unicode
+
+
+
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+
+
+% -------------------------------------
+% Marges et dimensions papier
+% -------------------------------------
+
+\usepackage[ paperwidth=8.5in, paperheight=11in,
+			 lmargin=1.25in, rmargin=1.25in, tmargin=1.25in, bmargin=1.25in]{geometry}
+
+
+% -------------------------------------
+%  Mise en page 
+% -------------------------------------
+
+\setlength{\parskip}{0.2cm}     % espace entre 2 paragraphes
+\setlength{\parindent}{0.0cm}	  % retrait du premier mot de chaque paragraphe (alinéa)
+%\usepackage[onehalfspacing]{setspace}   % espace entre les lignes d'un paragraphe
+
+
+% ------------------------------
+% Modules pour les mathématiques
+% ------------------------------
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{icomma}  % Les espaces en mode mathématique sont mieux gérés
+
+
+% -------------------------------------
+%  Modules divers
+% -------------------------------------
+
+\usepackage{float} % Pour avoir l'option H des tables et figures
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage[colorlinks, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
+
+
+% -------------------------------------
+% Paramètres pour la page titre
+% -------------------------------------
+
+\author{	
+     Eli Zytoon
+     \and
+   Patrick Nzudom
+     }
+     
+\title{Plan de travail et recherche documentaire}
+\date{24 mars 2022}
+
+
+% -------------------------------------
+% Début du contenu
+% -------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\rule{\linewidth}{.5pt}
+
+\tableofcontents
+
+\section{Bloc 1 - Eli}
+
+Ce bloc est consacré aux simulations des applications de la chaîne de Markov qui seront faites à l’aide du logiciel Python. Le bloc contiendra également la collection des données, qui seront utiles pour prédire le mouvement du marché boursier à un temps donné, et les simulations seront utilisées afin de voir l’évolution du marché d’un intervalle de temps à un autre. 
+
+\subsection{Recherche documentaire - Bloc 1}
+
+L'article \cite{introductionEnAnglais} présente deux simples applications de la chaîne de Markov, soit la prédiction de la météo et la prédication de la tendance du marché boursier. Ces deux exemples seront appliqués dans le logiciel \texttt{Python}. Le premier exemple (la météo) est utile pour l'expérimentation avec les chaînes de Markov puisque c'est un cas assez simple (une matrice de 2 x 2). Le deuxième exemple, qui est également relativement simple, sera plus élaboré.
+
+L'article \cite{realWorldUses} présente cinq utilisations de la chaîne de Markov. Il sera particulièrement utile dans la rédaction de l'introduction et de la conclusion, dans le but de voir les applications dans la vie de tous les jours. Il s'agit également d'une banque d'idées à simuler avec \texttt{Python}.
+
+Le document \cite{baseInformation} est une introduction aux chaînes de Markov qui va un peu plus loin que le cours d’algèbre linéaire que nous avons eu à la session d’automne 2021.  Il servira d’une base d’apprentissage et sera consulté afin de mieux comprendre les notions. Il sera utile pour tous les blocs. 
+
+\section{Bloc 2 - Eli}
+
+Ce bloc est consacré à la présentation des résultats. Puisque l’un des buts de ce bloc est de voir l’évolution du marché à long terme, plusieurs tableaux et graphiques seront présentés afin de voir les tendances du marché.
+
+\subsection{Recherche documentaire - Bloc 2}
+
+Le document \cite{biographieMarkov} présente une biographie de Anderi Markov qui a étudié les chaînes de Markov. Il s’agit des mêmes applications que la source \cite{introductionEnAnglais}, mais les calculs sont plus détaillés. L'intéressant dans ce document est la présentation de certaines simulations de la chaîne de Markov, afin de voir l’évolution à long terme.  
+
+Le document \cite{modelisation} concerne l’industrie des jeux vidéo. Le chercheur utilise les données de 120 jeux vidéo afin de généraliser les concepts de rétention et de taux d’attrition aux taux de migration entre les jeux. La présentation des graphiques dans la section 4.3 sera utile pour la création des graphiques dans notre propre projet.
+
+Le document \cite{baseInformation} est une introduction aux chaînes de Markov qui va un peu plus loin que le cours d’algèbre linéaire que nous avons eu à la session d’automne 2021.  Il servira d’une base d’apprentissage et sera consulté afin de mieux comprendre les notions. Il sera utile pour tout les blocs.
+
+\section{Bloc 1 - Patrick}
+Ce bloc servira à collecter les données, puis les traiter pour mettre en simulation les situations qui requièrent les chaînes de Markov avec le logiciel Python. Le but est de pouvoir manipuler \texttt{Python} et reproduire la situation où le joueur aura à miser son argent jusqu’à le multiplier ou tout perdre.
+
+\subsection{Recherche documentaire - Bloc 1}
+
+Une source intéressante pour le projet est la page PDF de L’Université de Lille, en France, rédigée par Daniel Flipo \cite{docFlipo}. Une situation où un joueur possédant 10 euros envisage deux options pour se faire plus d’argent. La première option est de jouer le 10 euros en une manche et soit de gagner 10 euros, soit de tout perdre. La seconde option est qu’il joue 1 euro à la fois jusqu’à atteindre une fortune de 20 euros ou tout perdre. On pourra s’inspirer de cette situation pour refaire l’exercice avec pour objectif d’atteindre une fortune de 30, 40 euros, où tout perdre. On compare avec la chaîne de Markov les probabilités que le joueur fasse fortune pour ces deux situations. 
+
+ L’introduction entamée par l’auteur dans le document \cite{nonReversibleMarkov} rend la source intéressante. L’auteur explique explicitement dans quels domaines sont principalement utilisées les chaînes de Markov, comme les statistiques, l’informatique et les statistiques mécaniques. On pourra s’inspirer de sa manière d’introduire le sujet.
+
+ Une source intéressante pour le projet est un document rédigé par Yassine Boulaich sur les valeurs propres et les vecteurs propres \cite{puissanceInverse}. Avec ce document, on comprend les caractéristiques propres. On comprend que la variable «A», étant une matrice de n x n, un vecteur non nul x est donc un vecteur propre de $A$ si $A x = \lambda x$. On pourra utiliser ce document pour se familiariser avec les notions de valeurs propres et vecteurs propres. 
+
+
+\section{Bloc 2 - Patrick}
+Dans ce bloc, il y aura une présentation des résultats suite à l'expérimentation dans des tableaux pour pouvoir les analyser, avec le logiciel Latex. On y trouvera aussi des commentaires et une conclusion globale.
+
+\subsection{Recherche documentaire - Bloc 2}
+
+
+Cette source de l’Université du Québec à Chicoutimi qui a pour auteur Ismaël Coulibaly \cite{docUQAC} permet d’analyser une situation intéressante où l’on a à utiliser la chaîne de Markov. Un génotype particulier peut rarement être obtenu par transmission de gène par un ancêtre, selon les lois de transmission des gènes. On utilise la chaîne de Markov pour calculer la probabilité de transmission de ce gène. Cette source sera utilisée pour avoir un excellent exemple d'inclusion de différentes approches pour analyser une situation, comme l'approche déterministe et l'approche intuitive. 
+
+La façon dont l’auteur présente ses résultats finaux à l’aide de tableaux est inspirante. C’est ce qui rend cette source \cite{customerRelations}, sur une situation de chaîne de Markov sur la relation entre une firme et son client et le revenu généré, intéressante. On présentera nos résultats avec des tableaux sur Latex d’une manière similaire.
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{biblioMath}
+
+\end{document}

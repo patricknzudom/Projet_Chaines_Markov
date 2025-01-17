@@ -1,0 +1,15 @@
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdftex 2022.3.24)  24 MAR 2022 13:19
+entering extended mode
+**C:/Users/206159161/Downloads/R07*latex/biblioMath.bib
+("C:/Users/206159161/Downloads/R07 latex/biblioMath.bib"
+! Undefined control sequence.
+l.6 	note={\url
+               {https://towardsdatascience.com/introduction-to-markov-chains...
+
+? 
+! Emergency stop.
+l.6 	note={\url
+               {https://towardsdatascience.com/introduction-to-markov-chains...
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!

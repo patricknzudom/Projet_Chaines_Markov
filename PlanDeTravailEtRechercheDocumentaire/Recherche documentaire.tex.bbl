@@ -1,0 +1,70 @@
+\begin{thebibliography}{10}
+
+\bibitem{puissanceInverse}
+Yassine Boulaich.
+\newblock Méthode de la puissance inverse.
+\newblock
+  \url{https://www.researchgate.net/profile/Yassine-Boulaich/publication/301296584_Methode_de_la_puissance_inverse/links/5710c8cb08ae74cb7da04519/Methode-de-la-puissance-inverse.Pdf
+  }.
+
+\bibitem{docUQAC}
+Ismaël Coulibaly, informaticien.
+\newblock Conception d’algorithmes probabilistes pour l’estimation des
+  génotypes d’un corpus de généalogie par chaînes de markov.
+\newblock \url{https://constellation.uqac.ca/190/1/030097733.pdf}.
+
+\bibitem{nonReversibleMarkov}
+Persi Diaconis, Susan Holmes, and Radford~M. Neal.
+\newblock Analysis of a nonreversible markov chain sampler.
+\newblock \url{https://www.jstor.org/stable/2667319}.
+
+\bibitem{docFlipo}
+Daniel Flipo.
+\newblock Chaînes de markov.
+\newblock
+  \url{http://math.univ-lille1.fr/~marsalle/enseignement/ISN/ChainesMarkovDanielFlipo.pdf}.
+
+\bibitem{modelisation}
+Julien St-Pierre Fortin.
+\newblock Modélisation par chaînes de markov de la gestion des relations
+  clients.
+\newblock {\em HEC Montréal}, décembre 2018.
+\newblock \url{https://biblos.hec.ca/biblio/memoires/m2019a610186.pdf}.
+
+\bibitem{baseInformation}
+Alain Haurie.
+\newblock Les chaînes de markov, la distribution des firmes suivant leurtaille
+  et la mobilité des entreprises.
+\newblock {\em L'Actualité économique}, 42(3):657--669, décembre 1966.
+\newblock
+  \url{https://www.erudit.org/en/journals/ae/1966-v42-n3-ae1521754/1003365ar.pdf}.
+
+\bibitem{realWorldUses}
+Joel Lee, Informaticien.
+\newblock What are markov chains? 5 nifty real world uses.
+\newblock 2016.
+\newblock
+  \url{https://www.makeuseof.com/tag/markov-chains-5-nifty-real-world-uses/}.
+
+\bibitem{biographieMarkov}
+David~Schön Myers, Lisa Wallin, and Petter Wikström, étudiants en~finance.
+\newblock An introduction to markov chains and their applications within
+  finance.
+\newblock
+  \url{http://www.math.chalmers.se/Stat/Grundutb/CTH/mve220/1617/redingprojects16-17/IntroMarkovChainsandApplications.pdf}.
+
+\bibitem{customerRelations}
+Philip~E. Preifer and Robert~L. Carraway.
+\newblock Modeling customer relationships as markov chains.
+\newblock {\em Journal of Interactive Marketing}, 14(2):657--669, mai 2000.
+\newblock
+  \url{https://journals.sagepub.com/doi/pdf/10.1002/(SICI)1520-6653(200021)14:2%3C43::AID-DIR4%3E3.0.CO;2-H}.
+
+\bibitem{introductionEnAnglais}
+Devin Soni.
+\newblock Introduction to markov chains.
+\newblock {\em Towards Data Science}, mars 2018.
+\newblock
+  \url{https://towardsdatascience.com/introduction-to-markov-chains-50da3645a50d/}.
+
+\end{thebibliography}

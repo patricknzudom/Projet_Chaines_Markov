@@ -1,0 +1,4 @@
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}Bloc 1 - Et pourquoi pas prédire le futur?}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Simulation d'une chaîne de Markov}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Simulation d'une autre chaîne de Markov}{3}{subsection.1.2}%

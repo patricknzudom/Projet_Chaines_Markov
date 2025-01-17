@@ -1,0 +1,209 @@
+% !TEX encoding = UTF-8 Unicode
+
+
+
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+
+
+% -------------------------------------
+% Marges et dimensions papier
+% -------------------------------------
+
+\usepackage[ paperwidth=8.5in, paperheight=11in,
+			 lmargin=1.25in, rmargin=1.25in, tmargin=1.25in, bmargin=1.25in]{geometry}
+
+
+% -------------------------------------
+%  Mise en page 
+% -------------------------------------
+
+\setlength{\parskip}{0.2cm}     % espace entre 2 paragraphes
+\setlength{\parindent}{0.0cm}	  % retrait du premier mot de chaque paragraphe (alinéa)
+%\usepackage[onehalfspacing]{setspace}   % espace entre les lignes d'un paragraphe
+
+
+% ------------------------------
+% Modules pour les mathématiques
+% ------------------------------
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{icomma}  % Les espaces en mode mathématique sont mieux gérés
+
+
+% -------------------------------------
+%  Modules divers
+% -------------------------------------
+
+\usepackage{float} % Pour avoir l'option H des tables et figures
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage[colorlinks, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
+
+
+% -------------------------------------
+% Paramètres pour la page titre
+% -------------------------------------
+
+\author{	
+	Patrick Nzudom
+     }
+     
+\title{Bloc 2}
+\date{12 mai 2022}
+
+
+% -------------------------------------
+% Début du contenu
+% -------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\rule{\linewidth}{.5pt}
+
+\tableofcontents
+
+Les chaînes de Markov sont utiles,  car elles sont
+
+- Simples, flexibles et supportées par de multiples résultats théoriques élégants
+
+
+- Efficaces pour renforcer l'intuition à propos de modèles dynamiques au hasard. Il y a des modèles de chaînes de Markov dans l'économie et la finance.
+
+\section{Définitions}
+
+\subsection{Processus stochastique}
+
+Un processus stochastique est une matrice carrée $ n \times n $ $ P $ dont
+
+1. Chaque élément de $ P $ est positif ou nul,  et
+
+
+2. La somme de chaque rangée de $ P $ est égale à 1
+
+Chaque rangée de $ P $ peut être vue comme une probabilités sur $ n $ résultats possibles\cite{hockey}.
+
+Puisque $ P $ est une matrice stochastique,  alors la $ k $-ème puissance de $P$,  $ P^k $ pour tous les $ k \in  \mathbb N $ est aussi une matrice stochastique.
+
+\subsection{Chaîne de Markov}
+
+Une chaîne de Markov est un système mathématique.  Il peut être défini comme une collection de variables au hasard qui passent d'un état à l'autre à l'aide de transitions,  en suivant des règles de probabilités. 
+
+Les probabilités associées à ces divers changements d'état sont appelées probabilités de transition\cite{Markov}. Ces transitions respectent les \textbf{Propriétés de Markov} qui expliquent que les probabilités qu'un évènement se produise ne dépendent que de l'état actuel et du temps écoulé.  La séquence d'état précédents n'influencent pas ces probabilités. Cette caractéristique des processus de Markov les rend \textbf{sans mémoire}.
+
+Ce qui caractérise le modèle de Markov est un espace d'état,  une matrice de transition décrivant les transitions pour une situation donnée,  et un état initial\cite{Markov}.
+
+Les chaînes de Markov ont un usage prolifique en mathématiques. Elles sont utilisées dans plusieurs domaines comme l'économie,  par exemple.
+
+
+
+Il y a une relation entre les matrices stochastiques et les chaînes de Markov.
+
+Pour commencer, posons $ S $ , un ensemble fini de de $ n $ éléments $ x_1, \ldots, x_n $ 
+
+L'ensemble $ S $ est appellé \textbf{ensemble d'état} et $ x_1, \ldots, x_n $ sont des \textbf{variables d'états}. (Par exemple, dans le cours de chimie ou de physique, la température, la pression et le volume sont des variables d'état).
+
+Une \textbf{Chaîne de Markov} $ \{X_t\} $ sur $ S $ est une séquences de nombres aléatoires sur $ S $ qui ont les \textbf{Propriétés de Markov}.  Les probabilité qu'un évènement se produise dans cette séquence de nombres aléatoires ne dépendent que de l'état actuel et du temps écoulé\cite{hockey}.
+
+
+\subsection{Différences entre processus stochastiques et chaînes de Markov}
+
+En bref, un processus stochastique est une séquence de valeurs pigées aléatoirement ordonnées par un index, comme ${x_0,x_1,...,x_n}$
+
+La séquence est stochastique, puisque les éléments sont pigés à partir d'une distribution de probabilités. Les processus stochastiques sont typiquement utilisés comme des modèles mathématiques de processus naturels\cite{hockey}.
+
+
+Une chaîne de Markov est à un processus stochastique ce qu'un graphique d'une fonction est à sa fonction. C'est semblable à un procédé stochastique, mais ça aide à mieux comprendre le processus stochastique. Un procédé
+C'est plus intuitif que des lois de la probabilité. Une loi de la probabilité est une mesure qui décrit le comportement d'une variable aléatoire. Elle permet d'utiliser les nombres aléatoire pour analyser l'expérience\cite{Loiprob}.
+
+Considérons une ville où il pleut beaucoup.  Supposons que les probabilités qu'il pleuve aujourd'hui s'il a plu hier est 0.8, et les probabilités qu'il pleuve aujourd'hui si c'était sec hier est 0.4. Maintenant, s'il est demandé de calculer la durée moyenne d'une période sèche, en terme de journée (cela pourrait être une fraction), on peut utiliser une probabilité conditionnelle pour résoudre le problème.
+
+Cependant, si les chances qu'il pleuve aujourd'hui dépendent non seulement de la situation pluit-ou-sèche d'hier, mais aussi celle d'avant-hier, ça serait une autre histoire. Les mathématiques deviendraient plus complexes. Dans ce cas, il serait plus approprié de schématiser les probabilités qu'il pleuve ou non dans cette ville avec une chaîne de Markov qui aurait les états «PP, PS, SP, SS» pour «pluit-aujourd'hui-pluit-hier, pluit-aujourd'hui-sec-hier, et ainsi de suite». Certaines transitions ne seraient pas possible, par exemple PP et SP ne peut pas transitionner à PS ou SS, car s'il pleut aujourd'hui, alors demain ne peut correspondre qu'à un état où il y a «pluit hier».  Cela simplifie le graphique de la chaîne de Markov, et cela rend les mathématiques plus simple.
+
+
+\section{Exemples}
+
+\subsection{Modèle Ahuntsic}
+
+
+Commençons par la situation suivante: \textbf{Nous avons un collège Ahuntsic et nous pouvons seulement aller là si on sort}.
+
+Je crée les trois états:
+
+- Maison
+
+
+- Ahuntsic
+
+
+- Retour à la maison
+
+À partir de l'état \textbf{Maison} nous pouvons seulement sortir. La première supposition est que nous devons sortir pour aller à Ahuntsic.
+
+Puis, à partir de \textbf{Ahuntsic},  pour chaque étape suivante, nous avons 0.56 de probabilités de retourner à la maison et 0.44 de probabilités de rester à Ahuntsic.
+
+Quand nous sommes de \textbf{retour à la maison}, la seule chose qu'on peut faire est d'y rester. Cela signifie que nous ne sortirons plus.
+
+Prenons pour exemple 500 étapes. Si chaque étape est une minute, nous aurons environ 8h.
+
+Toutes ces informations sont dans une "\textbf{Matrice de transition}":
+
+J'obtiens:
+
+
+\[
+        \begin{array}{c|ccc}
+	& Maison & Ahuntsic & \text{Retour à la maison}\\
+	\hline
+	Maison & 0 & 1 & 0\\
+	Ahuntsic & 0 & 14/25 & 11/25\\
+	\text{Retour à la maison} & 0 & 0 & 1\\
+	\end{array}
+\]
+
+
+\subsection{Modèle notes}
+
+Voyons un autre exemple qui aide à comprendre les chaînes de Markov:
+
+En rentrant du collège, quand un étudiant reçoit une bonne note, il va soit à la musculation, soit s'acheter des friandises ou étudier.
+
+À partir de données historiques, dans la circonstence où l'étudiant étudie quand il rentre, il y a 0.60 de chances qu'il ira à la musculation le jour d'après, 0.20 de chances qu'il étudie et 0.20 de chances qu'il aille s'acheter des friandises. 
+
+Quand il a une bonne note et qu'il va à la musculation, il y a 0.60 de chances qu'il aille encore à la musculation le jour suivant, 0.30 de chances qu'il s'achète des friandises et 0.10 de chances qu'il étudie.
+
+Enfin, quand l'étudiant achète des friandises un jour où il reçoit une bonne note, il y a 0.10 de chances qu'il s'achète encore des friandises le jour d'après, 0.70 de chances qu'il aille à la musculation et 0.20 de chances qu'il étudie.
+
+La chaîne de Markov représentée dans le diagramme d'états a 3 états possibles: étudier, musculation, friandises. La matrice de transition sera donc une matrice 3 par 3. Comme on peut le remarquerr dans le schéma que j'ai conçu avec overleaf, la somme des probabilités sur les flèches sortant d'un état est de 1. C'est la probabilité de la distribution. Les cellules ont les même nombres dans la matrice de transition et dans le diagramme d'état, puisqu'il s'agit de la même situation.
+
+
+Voici la matrice de transition:
+
+
+\[
+        \begin{array}{c|ccc}
+	& \text{Étudier} & Musculation & \text{Friandises}\\
+	\hline
+	\text{Étudier} & 1/5 & 3/5 & 1/5\\
+	Musculation & 1/10 & 3/5 & 3/10\\
+	Friandises & 1/5 & 7/10 & 1/10\\
+	\end{array}
+\]
+
+
+
+Les rangées représent l'état actuel, donc ce que l'étudiant fait aujourd'hui en rentrant chez lui après avoir reçu sa note, tandis que les colonnes représentent l'état suivant, donc les probabilités de ce que fera l'étudiant le jour suivant.
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{biblioMath}
+
+\end{document}
